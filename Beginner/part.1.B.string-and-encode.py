@@ -1,3 +1,4 @@
+#-*-coding: utf-8 -*-
 # python str采用unicode编码，但unicode相对占用内存，因此在传输或者储存时转换为utf-8
 # ord("str") 获取字符的整数表示	chr(num)将编码转换为对应字符 E.g:
 print(ord('A'))
@@ -10,7 +11,7 @@ print(x)
 #以unicode表示的str可用encode()编码为指定的bytes E.g:
 y = "ABC".encode('ascii')
 print (y)
-z = "中文".encode('utf-8')
+z = '中国'.encode("utf-8")  #UnicodeencodeError
 print(z)
 
 #bytes转换为str用decode() E.g:
