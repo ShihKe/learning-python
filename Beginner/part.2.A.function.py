@@ -70,7 +70,7 @@ print ( key_person('scy',32,**dict) )
 
 # 命名关键字参数:
 # #只接手**作为关键字参数,调用时要包含关键字：
-def dict (name,age,*,city,job) :
+def dict (name, age, *, city, job) :
     print ('name: ',name, 'age: ',age, 'city: ',city, 'job: ',job)
 
 print (dict('shih', 23, city='yuxi',job='stu'))
@@ -78,3 +78,13 @@ print (dict('shih', 23, city='yuxi',job='stu'))
 # #包含 **时，就不用在命名关键词前用*
 
 #参数组合：定义顺序：必选参数、默认参数、可变参数、命名关键字参数、关键字参数
+
+
+#递归 在函数内部调用函数自身（注意栈溢出）
+def foctrial (n):
+    if n == 1 :
+        return 1
+    return n * foctrial( n-1 )
+
+print ( foctrial(5) )
+#tail recursion
