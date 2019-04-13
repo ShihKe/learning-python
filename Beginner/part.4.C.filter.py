@@ -39,31 +39,7 @@ for n in primes():
 
 
 #test 2
-def num_iter():
-    n = 0
-    while True:
-        n = n + 1
-    yield n
-def not_palindrome (n):
-    n1 = n[:]
-    n2 = n[-1:0]
-    if n1 == n2:
-        yield n1
-def ppp():
-    pp = filter(not_palindrome,n)
-for y in ppp():
-    if y < 100:
-        print(y)
-    else:
-        break
-
-
-
-    
-
-
-
-
+#plindromic number
 
 
 
